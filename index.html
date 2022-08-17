@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sai's Tooth Care</title>
+    <link rel="icon" href="images/favicon.png">
+    <meta name="description"
+        content="SAI'S Tooth Care is the most trusted dental clinic in Chennai, aiming to bring world class dental care within reach of everyone.">
+    <meta name="keywords" content="SAI'S Tooth Care clinic, Dental Clinics, chennai dental, tooth care chennai, dental hospital near me, dental clinic, dental and medical problems,dental braces cost in chennai, dental centar, dental care, dental doctor, dental doctor near me, dental solutions, dental services, Multispeciality Dental Care, Multispeciality,  Dental Surgeon,dental treatment, dental technology, SAI'S TOOTH CARE, sai tooth care, sais tooth care chennai, Dental Fillings, Root Canal Treatment, Wisdom Teeth Removal, Braces &amp; Aligners, Dental Implants, Dentures, Bridges &amp; Crowns,
+        Kids Dentistry, Smile Makeover, Teeth Whitening, Mouth Ulcers, Dental Consulting, doctor consulting,">
+    <!-- css -->
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/mobile.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body onload="myFunction()">
+    <div id="loader">
+        <lottie-player src="images/40503-gladiator-tooth.json" background="transparent" speed="1" loop autoplay>
+        </lottie-player>
+    </div>
+
+    <div style="display:none;" id="main" class="animate-bottom main">
+        <!-- NavBar -->
+        <div class="sticky-top">
+            <nav class="navbar navbar-expand-md justify-content-center ">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">
+                        <img id="logo" src="images/logoclr.png" loading="lazy" title="Sai's Tooth Care"
+                            alt="Sai's Tooth Care logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse justify-content-end " id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" title="Home" href="index.html#home">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" title="About" href="index.html#about">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" title="Services" href="index.html#services">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" title="Contact" href="index.html#contact">Contact</a>
+                            </li>
+                            <li> <a class="btn btn-light nav-btn" href="#" style="border-radius: 50px;"
+                                    title="Book an Appointment" type="button">Book an Appointment</a>
+                            </li>
+                            <li><img src="images/moon.png" id="daynight" alt="Change Theme" title="Change Theme">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- top -->
+        <section id="home">
+            <div class="row">
+                <div class="col home-left">
+                    <h1>The Art of Creating Smiles</h1>
+                    <lottie-player class="smile" src="https://assets8.lottiefiles.com/packages/lf20_I54hLY.json"
+                        background="transparent" speed="1" loop autoplay>
+                    </lottie-player>
+                    <p class="top-para">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, doloremque quia
+                        exercitationem quaerat.
+                    </p>
+                    <p title="Opening Time" class="time"><i class="far fa-clock"></i>8AM - 12PM, 6PM - 9PM</p>
+                    <button class="btn btn-light top-btn" href="#" title="Book an Appointment" type="button">Book an
+                        Appointment</buttons>
+                </div>
+                <div class="col justify-content-center">
+                    <img class="homesnap" src="images/dentist-clinic.png" alt="dentist-clinic">
+                </div>
+            </div>
+        </section>
+
+        <!-- top -->
+        <section id="about">
+            <div class="row">
+                <div class="col">
+                    <lottie-player class="smile" src="https://assets8.lottiefiles.com/packages/lf20_I54hLY.json"
+                        background="transparent" speed="1" loop autoplay>
+                    </lottie-player>
+                    <h1>The Art of Creating Smiles</h1>
+                    <p class="top-para">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, doloremque quia
+                        exercitationem quaerat.
+                    </p>
+                    <button class="btn btn-light top-btn" href="#" title="Book an Appointment" type="button">Book an
+                        Appointment</buttons>
+                </div>
+                <div class="col justify-content-center">
+                    <img class="homesnap" src="images/dentist-clinic.png" alt="dentist-clinic">
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="index.js"></script>
+    <script>
+        var myVar;
+
+        function myFunction() {
+            myVar = setTimeout(showPage);
+        }
+
+        function showPage() {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("main").style.display = "block";
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+        integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous">
+    </script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</body>
+
+</html>
