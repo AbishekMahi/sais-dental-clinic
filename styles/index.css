@@ -69,6 +69,31 @@ body {
     background-color: var(--secondary-color) !important;
 }
 
+h1,
+h2,
+h3 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 800 !important;
+    margin-bottom: 1rem !important;
+}
+
+h1 {
+    font-size: 4.5rem !important;
+}
+
+h2 {
+    font-size: 3.5rem !important;
+}
+
+h3 {
+    font-size: 2.2rem !important;
+    /* color: #24c8ff !important; */
+    background: -webkit-linear-gradient(42deg, #00ffb3 0%, #24c8ff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: underline !important;
+}
+
 p {
     font-family: 'Nunito', sans-serif;
 }
@@ -114,6 +139,15 @@ p {
     border-color: rgb(255, 255, 255) !important;
 }
 
+.navbar-toggler {
+    padding: var(--bs-navbar-toggler-padding-y) 0.5rem !important;
+    font-size: var(--bs-navbar-toggler-font-size);
+    line-height: 1;
+    color: rgb(255 255 255) !important;
+    background-color: rgb(255 255 255) !important;
+    border: var(--bs-border-width) solid rgb(255, 255, 255) !important;
+}
+
 .nav-btn {
     color: #25BEEF !important;
     background-color: var(--third-color) !important;
@@ -155,14 +189,7 @@ p {
     padding: 2rem auto !important;
 }
 
-h1 {
-    font-family: 'Lato', sans-serif;
-    font-weight: 800 !important;
-    font-size: 4.5rem !important;
-    margin-bottom: 1rem !important;
-}
-
-.top-para {
+.para {
     font-size: 20px !important;
     margin-bottom: 1rem !important;
     color: var(--primary-color) !important;
@@ -171,11 +198,10 @@ h1 {
 
 .time {
     display: flex;
-    font-size: 20px !important;
+    font-size: 18px !important;
     align-items: center;
     cursor: pointer;
     color: var(--primary-color) !important;
-    padding: 10px auto;
     opacity: 85%;
 }
 
@@ -215,6 +241,19 @@ h1 {
     width: 100%;
 }
 
+/* about */
 #about {
-    padding: 5% 7% 3%;
+    padding: 5% 8% 3%;
+    color: var(--primary-color) !important;
+    text-align: left !important;
+}
+
+.about-row {
+    display: flex !important;
+    align-items: center;
+}
+
+.about-snap {
+    z-index: -9;
+    width: 100%;
 }
