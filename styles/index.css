@@ -79,6 +79,10 @@ h3 {
 
 h1 {
     font-size: 4.5rem !important;
+    background: -webkit-linear-gradient(90deg, #00ffb3 0%, #24c8ff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: underline !important;
 }
 
 h2 {
@@ -193,7 +197,7 @@ p {
     font-size: 20px !important;
     margin-bottom: 1rem !important;
     color: var(--primary-color) !important;
-    opacity: 65%;
+    opacity: 75%;
 }
 
 .time {
@@ -221,18 +225,21 @@ p {
 }
 
 .top-btn {
-    color: rgb(255, 255, 255) !important;
-    background: linear-gradient(42deg, #00ffb3 0%, #24c8ff 100%) !important;
+    color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+    background: transparent !important;
     border-radius: 50px !important;
     font-family: 'Nunito', sans-serif !important;
     font-size: 18px !important;
     font-weight: 600 !important;
     padding: 10px 20px !important;
-    transition: 600ms !important;
+    transition: 300ms !important;
 }
 
 .top-btn:hover {
+    color: #fff !important;
     transform: scale(1.05) !important;
+    border-color: white !important;
     background: linear-gradient(42deg, #25BEEF 0%, #77ffd6 100%) !important;
 }
 
@@ -256,4 +263,10 @@ p {
 .about-snap {
     z-index: -9;
     width: 100%;
+}
+
+/* services */
+#services {
+    padding: 5% 8% 3%;
+    color: var(--primary-color) !important;
 }
