@@ -14,6 +14,16 @@
         padding: 10px 12px !important;
     }
 
+    #daynight {
+        width: 45px;
+        padding: 5px;
+        margin-left: 10px;
+        position: absolute;
+        z-index: 99;
+        left: 30%;
+        cursor: pointer;
+    }
+
     /* top */
     #home {
         padding: 6% 6% 4%;
@@ -34,6 +44,15 @@
 
     .time {
         font-size: 16px !important;
+        margin-bottom: .8rem !important;
+    }
+
+    .fa-clock {
+        font-size: 40px;
+    }
+
+    .fa-phone-alt {
+        font-size: 35px !important;
     }
 
     .smile {
@@ -53,12 +72,42 @@
 }
 
 @media only screen and (max-width: 480px) {
+    .nav-link {
+        font-size: 18px !important;
+        padding-right: 16px !important;
+    }
+
+    .nav-btn {
+        font-size: 18px !important;
+        padding: 10px 12px !important;
+    }
+
+    .navbar-brand img {
+        padding-left: .3rem;
+    }
+
+    #daynight {
+        width: 45px;
+        padding: 5px;
+        margin-left: 10px;
+        position: absolute;
+        z-index: 99;
+        top: 16px;
+        left: 65%;
+        /* right: 80px; */
+        cursor: pointer;
+    }
+
     h1 {
         font-size: 3rem !important;
     }
 
     h2 {
         font-size: 2.5rem !important;
+    }
+
+    h2:hover::after {
+        width: 35%;
     }
 
     h3 {
@@ -85,4 +134,40 @@
         justify-content: center;
         text-align: center;
     }
+}
+
+@media only screen and (max-width: 280px) {
+    .navbar-brand img {
+        height: 2.2rem !important;
+        padding-left: 0;
+    }
+
+    .para {
+        font-size: 14px !important;
+    }
+
+    #daynight {
+        width: 45px;
+        padding: 5px;
+        margin-left: 0;
+        top: 10px;
+        left: 60%;
+    }
+
+    h1 {
+        font-size: 2rem !important;
+    }
+
+    h2 {
+        font-size: 1.7rem !important;
+    }
+
+    h3 {
+        font-size: 1.3rem !important;
+    }
+
+    .homesnap {
+        padding: 2%;
+    }
+
 }

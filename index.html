@@ -33,6 +33,7 @@
                         <img id="logo" src="images/logowhite.png" loading="lazy" title="Sai's Tooth Care"
                             alt="Sai's Tooth Care logo">
                     </a>
+                    <img src="images/sun.png" id="daynight" alt="Change Theme" title="Change Theme">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                         aria-label="Toggle navigation">
@@ -53,10 +54,10 @@
                             <li class="nav-item">
                                 <a class="nav-link" title="Contact" href="index.html#contact">Contact</a>
                             </li>
-                            <li> <a class="btn btn-light nav-btn" href="#" style="border-radius: 50px;"
-                                    title="Book an Appointment" type="button">Book an Appointment</a>
-                            </li>
-                            <li><img src="images/sun.png" id="daynight" alt="Change Theme" title="Change Theme">
+                            <li> <a class="btn btn-light nav-btn" href="#" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal" title="Book an Appointment" type="button" style="
+                                    border-radius: 50px;" title="Book an Appointment" type="button">Book an
+                                    Appointment</a>
                             </li>
                         </ul>
                     </div>
@@ -67,7 +68,7 @@
         <section id="home">
             <div class="row">
                 <div class="col-md-6 home-left">
-                    <h1>The Art Of Creating Smiles
+                    <h1>The Art Of Creating Smiles.
                         <lottie-player class="smile" src="https://assets8.lottiefiles.com/packages/lf20_I54hLY.json"
                             background="transparent" speed="1" loop autoplay>
                         </lottie-player>
@@ -77,10 +78,13 @@
                         dental care within reach of everyone.
                     </p>
                     <p title="Opening Time" class="time"><i class="far fa-clock"></i>8AM - 12PM, 6PM - 9PM</p>
-                    <button class="btn btn-light top-btn" href="#" title="Book an Appointment" type="button">Book an
-                        Appointment</buttons>
+                    <a title="Call SAI's tooth care" class="time" href="tel:+9198414 05334"><i
+                            class="fas fa-phone-alt"></i>+91 - 98414 05334</a>
+
+                    <button class="btn btn-light top-btn" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                        title="Book an Appointment" type="button">Book an Appointment</buttons>
                 </div>
-                <div class="col-md-6 justify-content-center">
+                <div class="col-md-6 home-right justify-content-center">
                     <img class="homesnap" src="images/dentist-clinic.png" alt="dentist-clinic">
                 </div>
             </div>
@@ -88,7 +92,7 @@
 
         <!-- About -->
         <section id="about">
-            <h2>About</h2>
+            <h2>About Us</h2>
             <div class="row  about-row">
                 <div class="col-md-4 justify-content-center">
                     <lottie-player class="about-snap"
@@ -97,7 +101,7 @@
                     </lottie-player>
                 </div>
                 <div class="col-md-8">
-                    <h3>Welcome To Multispeciality Dental Care</h3>
+                    <h3>Welcome To Multispeciality Dental Care.</h3>
                     <p class="para">
                         SAI'S Tooth Care is the most trusted clinic of dental clinics in Chennai, aiming to bring world
                         class dental care within reach of everyone. Providing the best of ambience, technological
@@ -108,7 +112,6 @@
             </div>
             <div style="flex-wrap: wrap-reverse;" class="row about-row">
                 <div class="col-md-8">
-                    <!-- <h3>Welcome To Multispeciality Dental Care</h3> -->
                     <p class="para">
                         At Sai's tooth care, we are passionate about providing our patients with a delightful experience
                         with all treatments. Our staffs strive to build the patient's trust and are always ready to
@@ -132,19 +135,79 @@
                     </lottie-player>
                 </div>
                 <div class="col-md-8">
-                    <!-- <h3>Welcome To Multispeciality Dental Care</h3> -->
                     <p class="para">
                         SAI'S Tooth Care is the most trusted clinic of dental clinics in Chennai, aiming to bring world
                         class dental care within reach of everyone. Providing the best of ambience, technological
                         advancement and evidence based updated treatments, our clinic are equipped with the latest and
                         most ergonomic Dental Chairs, Lasers, Dental Implants, branded consumables and Digital X-rays.
                     </p>
+                    <button class="btn btn-light top-btn" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                        title="Book an Appointment" type="button">Book an Appointment</buttons>
+                        <!-- <button type="button" class="btn btn-primary" data-bs-whatever="@mdo">Open modal for
+                            @mdo</button> -->
+                </div>
+
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Book an Appointment</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="recipient-name" class="col-form-label">Name:</label>
+                                        <input type="text" class="form-control" required placeholder="Enter Name"
+                                            id="recipient-name">
+                                    </div>
+                                    <!-- <div class="mb-3">
+                                        <label for="recipient-email" class="col-form-label">Email:</label>
+                                        <input type="email" class="form-control" id="recipient-name">
+                                    </div> -->
+                                    <div class="mb-3">
+                                        <label for="recipient-tel" class="col-form-label">Phone Number:</label>
+                                        <input type="tel" class="form-control" required placeholder="Enter Phone Number"
+                                            id="recipient-name">
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="checkbox"
+                                            id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Default checkbox
+                                        </label>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="message-text" class="col-form-label">Message:</label>
+                                        <textarea class="form-control" required placeholder="Write your Message here..."
+                                            id="message-text"></textarea>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Submit</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-        <!-- About -->
+        <!-- Services -->
         <section id="services">
-            <h2>Services</h2>
+            <h2>Our Services</h2>
+            <div class="col-md-4 justify-content-center">
+                <lottie-player class="about-snap" src="https://assets6.lottiefiles.com/private_files/lf30_tolm1dij.json"
+                    background="transparent" speed="1" loop autoplay>
+                </lottie-player>
+            </div>
+
+        </section>
+        <!-- Contact -->
+        <section id="contact">
+            <h2>Contact Us</h2>
             <div class="col-md-4 justify-content-center">
                 <lottie-player class="about-snap" src="https://assets6.lottiefiles.com/private_files/lf30_tolm1dij.json"
                     background="transparent" speed="1" loop autoplay>
