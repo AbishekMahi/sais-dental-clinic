@@ -18,28 +18,50 @@
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 
-<body onload="myFunction()" class="dark_mode">
+<body onload="myFunction()" class="">
     <div id="loader">
         <lottie-player src="images/40503-gladiator-tooth.json" background="transparent" speed="1" loop autoplay>
         </lottie-player>
     </div>
 
     <div style="display:none;" id="main" class="animate-bottom main">
+        <a href="http://wa.me/+918552085521" target="_blank" title="Whatsapp" class="whatsapp"><i
+                class="fab fa-whatsapp" aria-hidden="true"></i></a>
+        <style>
+            .whatsapp {
+                position: fixed !important;
+                bottom: 30px;
+                right: 30px;
+                z-index: 99;
+                border: none;
+                outline: none;
+                background-color: #25D366;
+                color: white;
+                cursor: pointer;
+                padding: 9px 18px;
+                border-radius: 50%;
+                font-size: 30px;
+                transition: 300ms;
+            }
+
+            .whatsapp:hover {
+                color: white;
+                bottom: 35px;
+            }
+        </style>
         <!-- NavBar -->
         <div class="sticky-top">
             <nav class="navbar navbar-expand-md justify-content-center ">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="index.html">
-                        <img id="logo" src="images/logowhite.png" loading="lazy" title="Sai's Tooth Care"
-                            alt="Sai's Tooth Care logo">
-                    </a>
-                    <img src="images/sun.png" id="daynight" alt="Change Theme" title="Change Theme">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                         aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
-                    </button>
-
+                    </button><a class="navbar-brand" href="index.html">
+                        <img id="logo" src="images/logoclr.png" loading="lazy" title="Sai's Tooth Care"
+                            alt="Sai's Tooth Care logo">
+                    </a>
+                    <img src="images/moon.png" id="daynight" alt="Change Theme" title="Change Theme">
                     <div class="collapse navbar-collapse justify-content-end " id="navbarNavDropdown">
                         <ul class="navbar-nav">
                             <li class="nav-item">
@@ -56,259 +78,358 @@
                             </li>
                             <li> <a class="btn btn-light nav-btn" href="#" data-bs-toggle="modal"
                                     data-bs-target="#exampleModal" title="Book an Appointment" type="button" style="
-                                    border-radius: 50px;" title="Book an Appointment" type="button">Book an
-                                    Appointment</a>
+                                    border-radius: 50px;" title="Book an Appointment" type="button">Book Now</a> </li>
+                            <li> <img src="images/moon.png" id="daynights" alt="Change Theme" title="Change Theme">
                             </li>
                         </ul>
                     </div>
                 </div>
             </nav>
         </div>
-        <!-- top -->
-        <section id="home">
-            <div class="row">
-                <div class="col-md-6 home-left">
-                    <h1>The Art Of Creating Smiles.
-                        <lottie-player class="smile" src="https://assets8.lottiefiles.com/packages/lf20_I54hLY.json"
+        <main>
+            <!-- top -->
+            <section id="home">
+                <div class="row">
+                    <div class="col-md-6 home-left">
+                        <h1>The Art Of Creating Smiles.
+                            <!-- <lottie-player class="smile" src="https://assets8.lottiefiles.com/packages/lf20_I54hLY.json"
+                            background="transparent" speed="1" loop autoplay>
+                        </lottie-player> -->
+                        </h1>
+                        <p class="para">
+                            SAI's Tooth Care is the most trusted dental clinic in Chennai, aiming to bring world class
+                            dental care within reach of everyone.
+                        </p>
+                        <p title="Opening Time" class="time"><i class="far fa-clock"></i>10am - 02pm, 5:30pm - 9pm</p>
+                        <a title="Call SAI's tooth care" class="time" href="tel:+9198414 05334"><i
+                                class="fas fa-phone-alt"></i>+91 - 98414 05334</a>
+                        <button class="btn btn-light top-btn" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                            title="Book an Appointment" type="button">Book an Appointment</buttons>
+                    </div>
+                    <div class="col-md-6 home-right justify-content-center">
+                        <img class="homesnap" loading="lazy" src="images/dentist-clinic.png" alt="dentist-clinic">
+                    </div>
+                </div>
+            </section>
+
+            <!-- About -->
+            <section id="about">
+                <h2>About Us</h2>
+                <div class="row  about-row">
+                    <div class="col-md-4 justify-content-center">
+                        <lottie-player class="about-snap"
+                            src="https://assets6.lottiefiles.com/private_files/lf30_tolm1dij.json"
                             background="transparent" speed="1" loop autoplay>
                         </lottie-player>
-                    </h1>
-                    <p class="para">
-                        SAI's Tooth Care is the most trusted dental clinic in Chennai, aiming to bring world class
-                        dental care within reach of everyone.
-                    </p>
-                    <p title="Opening Time" class="time"><i class="far fa-clock"></i>8AM - 12PM, 6PM - 9PM</p>
-                    <a title="Call SAI's tooth care" class="time" href="tel:+9198414 05334"><i
-                            class="fas fa-phone-alt"></i>+91 - 98414 05334</a>
+                    </div>
+                    <div class="col-md-8">
+                        <h3>Welcome To Multispeciality Dental Care.</h3>
+                        <p class="para">
+                            SAI'S Tooth Care is the most trusted clinic of dental clinics in Chennai, aiming to bring
+                            world
+                            class dental care within reach of everyone. Providing the best of ambience, technological
+                            advancement and evidence based updated treatments, our clinic are equipped with the latest
+                            and
+                            most ergonomic Dental Chairs, Lasers, Dental Implants, branded consumables and Digital
+                            X-rays.
+                        </p>
+                    </div>
+                </div>
+                <div style="flex-wrap: wrap-reverse;" class="row about-row">
+                    <div class="col-md-8">
+                        <p class="para">
+                            At Sai's tooth care, we are passionate about providing our patients with a delightful
+                            experience
+                            with all treatments. Our staffs strive to build the patient's trust and are always ready to
+                            answer your queries. After examining and understanding your concerns, our dentists provide
+                            personal communication to demonstrate the entire treatment procedures from our dental
+                            doctors
+                            before the treatment. <br><br>
+                            Ethical Practice and working with utmost care for patient's health and happiness has been
+                            the
+                            secret of success.
+                        </p>
+                    </div>
+                    <div class="col-md-4 justify-content-center">
+                        <lottie-player class="about-snap"
+                            src="https://assets7.lottiefiles.com/packages/lf20_bgjah2jz.json" background="transparent"
+                            speed="1" loop autoplay>
+                        </lottie-player>
+                    </div>
+                </div>
+                <div class="row about-row">
+                    <div class="col-md-4 justify-content-center">
+                        <lottie-player class="about-snap"
+                            src="https://assets6.lottiefiles.com/packages/lf20_slcgd0bi.json" background="transparent"
+                            speed="1" loop autoplay>
+                        </lottie-player>
+                    </div>
+                    <div class="col-md-8">
+                        <p class="para">
+                            SAI'S Tooth Care is the most trusted clinic of dental clinics in Chennai, aiming to bring
+                            world
+                            class dental care within reach of everyone. Providing the best of ambience, technological
+                            advancement and evidence based updated treatments, our clinic are equipped with the latest
+                            and
+                            most ergonomic Dental Chairs, Lasers, Dental Implants, branded consumables and Digital
+                            X-rays.
+                        </p>
+                        <button class="btn btn-light top-btn" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                            title="Book an Appointment" type="button">Book an Appointment</buttons>
+                    </div>
 
-                    <button class="btn btn-light top-btn" data-bs-toggle="modal" data-bs-target="#exampleModal"
-                        title="Book an Appointment" type="button">Book an Appointment</buttons>
-                </div>
-                <div class="col-md-6 home-right justify-content-center">
-                    <img class="homesnap" loading="lazy" src="images/dentist-clinic.png" alt="dentist-clinic">
-                </div>
-            </div>
-        </section>
-
-        <!-- About -->
-        <section id="about">
-            <h2>About Us</h2>
-            <div class="row  about-row">
-                <div class="col-md-4 justify-content-center">
-                    <lottie-player class="about-snap"
-                        src="https://assets6.lottiefiles.com/private_files/lf30_tolm1dij.json" background="transparent"
-                        speed="1" loop autoplay>
-                    </lottie-player>
-                </div>
-                <div class="col-md-8">
-                    <h3>Welcome To Multispeciality Dental Care.</h3>
-                    <p class="para">
-                        SAI'S Tooth Care is the most trusted clinic of dental clinics in Chennai, aiming to bring world
-                        class dental care within reach of everyone. Providing the best of ambience, technological
-                        advancement and evidence based updated treatments, our clinic are equipped with the latest and
-                        most ergonomic Dental Chairs, Lasers, Dental Implants, branded consumables and Digital X-rays.
-                    </p>
-                </div>
-            </div>
-            <div style="flex-wrap: wrap-reverse;" class="row about-row">
-                <div class="col-md-8">
-                    <p class="para">
-                        At Sai's tooth care, we are passionate about providing our patients with a delightful experience
-                        with all treatments. Our staffs strive to build the patient's trust and are always ready to
-                        answer your queries. After examining and understanding your concerns, our dentists provide
-                        personal communication to demonstrate the entire treatment procedures from our dental doctors
-                        before the treatment. <br><br>
-                        Ethical Practice and working with utmost care for patient's health and happiness has been the
-                        secret of success.
-                    </p>
-                </div>
-                <div class="col-md-4 justify-content-center">
-                    <lottie-player class="about-snap" src="https://assets7.lottiefiles.com/packages/lf20_bgjah2jz.json"
-                        background="transparent" speed="1" loop autoplay>
-                    </lottie-player>
-                </div>
-            </div>
-            <div class="row about-row">
-                <div class="col-md-4 justify-content-center">
-                    <lottie-player class="about-snap" src="https://assets6.lottiefiles.com/packages/lf20_slcgd0bi.json"
-                        background="transparent" speed="1" loop autoplay>
-                    </lottie-player>
-                </div>
-                <div class="col-md-8">
-                    <p class="para">
-                        SAI'S Tooth Care is the most trusted clinic of dental clinics in Chennai, aiming to bring world
-                        class dental care within reach of everyone. Providing the best of ambience, technological
-                        advancement and evidence based updated treatments, our clinic are equipped with the latest and
-                        most ergonomic Dental Chairs, Lasers, Dental Implants, branded consumables and Digital X-rays.
-                    </p>
-                    <button class="btn btn-light top-btn" data-bs-toggle="modal" data-bs-target="#exampleModal"
-                        title="Book an Appointment" type="button">Book an Appointment</buttons>
-                </div>
-
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Book an Appointment</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <form>
-                                    <div class="mb-3">
-                                        <label for="recipient-name" class="col-form-label">Name:</label>
-                                        <input type="text" class="form-control" required placeholder="Enter Name"
-                                            id="recipient-name">
-                                    </div>
-                                    <!-- <div class="mb-3">
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Book an Appointment</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="recipient-name" class="col-form-label">Name:</label>
+                                            <input type="text" name="Name" class="form-control" required
+                                                placeholder="Enter Name" id="recipient-name">
+                                        </div>
+                                        <!-- <div class="mb-3">
                                         <label for="recipient-email" class="col-form-label">Email:</label>
                                         <input type="email" class="form-control" id="recipient-name">
                                     </div> -->
-                                    <div class="mb-3">
-                                        <label for="recipient-tel" class="col-form-label">Phone Number:</label>
-                                        <input type="tel" class="form-control" required placeholder="Enter Phone Number"
-                                            id="recipient-name">
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="checkbox"
-                                            id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            Default checkbox
-                                        </label>
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="message-text" class="col-form-label">Message:</label>
-                                        <textarea class="form-control" required placeholder="Write your Message here..."
-                                            id="message-text"></textarea>
-                                    </div>
-                                </form>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Submit</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Services -->
-        <section id="services">
-            <h2>Our Services</h2>
-            <div class="row g-3" style="justify-content: center;">
-                <div class="col-12 col-md-4 col-lg-3 py-2">
-                    <div class="card" title="Bridges & Crowns">
-                        <img src="images/Bridges-Crowns.jpg" class="card-img-top" alt="Bridges & Crowns">
-                        <div class="card-body">
-                            <h5 class="card-title">Bridges & Crowns</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4 col-lg-3 py-2">
-                    <div class="card" title="Dentures">
-                        <img src="images/dentures.jpg" class="card-img-top" loading="lazy" alt="Dentures">
-                        <div class="card-body">
-                            <h5 class="card-title">Dentures</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4 col-lg-3 py-2">
-                    <div class="card" title="Dental Fillings">
-                        <img src="images/dental-fillings.jpg" class="card-img-top" loading="lazy" alt="Dental Fillings">
-                        <div class="card-body">
-                            <h5 class="card-title">Dental Fillings</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4 col-lg-3 py-2">
-                    <div class="card" title="Root Canal Treatment">
-                        <img src="images/root-canal-treatment.jpg" class="card-img-top" loading="lazy"
-                            alt="Root Canal Treatment">
-                        <div class="card-body">
-                            <h5 class="card-title">Root Canal Treatment</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4 col-lg-3 py-2">
-                    <div class="card" title="Wisdom Teeth Removal">
-                        <img src="images/wisdom-teeth-removal.jpg" class="card-img-top" loading="lazy"
-                            alt="Wisdom Teeth Removal">
-                        <div class="card-body">
-                            <h5 class="card-title">Wisdom Teeth Removal</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4 col-lg-3 py-2">
-                    <div class="card" title="Braces & Aligners">
-                        <img src="images/braces-aligners.jpg" class="card-img-top" loading="lazy"
-                            alt="Braces & Aligners">
-                        <div class="card-body">
-                            <h5 class="card-title">Braces & Aligners</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4 col-lg-3 py-2">
-                    <div class="card" title="Dental Implants">
-                        <img src="images/dental-implants.jpg" class="card-img-top" loading="lazy" alt="Dental Implants">
-                        <div class="card-body">
-                            <h5 class="card-title">Dental Implants</h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Contact -->
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <h3>We Are Looking Forward To Hearing From You!</h3>
-            <div class="row">
-                <div class="col-sm-12 col-md-6 address">
-                    <a href="https://goo.gl/maps/KR3ChK2BuzgPSYSm9" title="Address" class="time">
-                        <Address><i class="fas fa-map-marked-alt c-icon"></i> <b> Address : </b>SAI'S Tooth Care,
-                            144/287, Avai Shanmugam Salai, Gopalapuram, Chennai, Tamil Nadu 600086.</Address>
-                    </a>
-                    <a href="https://goo.gl/maps/KR3ChK2BuzgPSYSm9" title="Landmark" class="time">
-                        <Address><i class="fas fa-map c-icon"></i><b> Landmark : </b>(Opposite to Eswari Lending
-                            Library, next to Lloyd's road bus stop, Ganapathy Colony.)</Address>
-                    </a>
-                    <a title="Call SAI's tooth care" class="time tel-mail" href="tel:+9198414 05334"><i
-                            class="fas fa-phone-alt  c-icon"></i><b>Phone : </b> +91 - 98414 05334</a>
-                    <a title="Mail SAI's tooth care" class="time tel-mail" href="mailto:info@saistoothcare.com"><i
-                            class="fas fa-envelope  c-icon"></i></i>
-                        <b>Email : </b> info@saistoothcare.com</a>
-                    <div class="row">
-                        <div class="col">
-                            <a class="btn facebook s-icon" href="#" title="Facebook" role="button"><i
-                                    class="fab fa-facebook-f "></i></a>
-                        </div>
-                        <div class="col">
-                            <a class="btn instagram s-icon" href="#" title="Instagram" role="button"><i
-                                    class="fab fa-instagram"></i></a>
-                        </div>
-                        <div class="col">
-                            <a class="btn twitter s-icon" href="#" title="Twitter" role="button"><i
-                                    class="fab fa-twitter"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <iframe class="col-sm-12 col-md-6 justify-content-center"
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7773.590815864222!2d80.25988!3d13.048691!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xedb656ef9f4739bd!2sSAI&#39;S%20TOOTH%20CARE!5e0!3m2!1sen!2sin!4v1660898668279!5m2!1sen!2sin"
-                    style="border:0;   filter: grayscale(10%) invert(90%) contrast(100%);" allowfullscreen=""
-                    loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-            </div>
+                                        <div class="mb-3">
+                                            <label for="recipient-tel" class="col-form-label">Phone Number:</label>
+                                            <input type="tel" name="Phone" class="form-control" required
+                                                placeholder="Enter Phone Number" id="recipient-name">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="datetime" class="col-form-label">Date & Time:</label>
+                                            <input type="datetime-local" id="datetime-local" class="form-control"
+                                                required placeholder="Date & Time">
+                                        </div>
 
-        </section>
-        <hr>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="checkbox"
+                                                id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                Default checkbox
+                                            </label>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="message-text" class="col-form-label">Message:</label>
+                                            <textarea class="form-control" name="Message" required
+                                                placeholder="Write your Message here..." id="message-text"></textarea>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Services -->
+            <section id="services">
+                <h2>Our Services</h2>
+                <div class="row g-3" style="justify-content: center;">
+                    <div class="col-12 col-md-4 col-lg-3 py-2">
+                        <div class="card" title="Bridges & Crowns">
+                            <img src="images/Bridges-Crowns.jpg" class="card-img-top" alt="Bridges & Crowns">
+                            <div class="card-body">
+                                <h5 class="card-title">Bridges & Crowns</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-3 py-2">
+                        <div class="card" title="Dentures">
+                            <img src="images/dentures.jpg" class="card-img-top" loading="lazy" alt="Dentures">
+                            <div class="card-body">
+                                <h5 class="card-title">Dentures</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-3 py-2">
+                        <div class="card" title="Dental Fillings">
+                            <img src="images/dental-fillings.jpg" class="card-img-top" loading="lazy"
+                                alt="Dental Fillings">
+                            <div class="card-body">
+                                <h5 class="card-title">Dental Fillings</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-3 py-2">
+                        <div class="card" title="Root Canal Treatment">
+                            <img src="images/root-canal-treatment.jpg" class="card-img-top" loading="lazy"
+                                alt="Root Canal Treatment">
+                            <div class="card-body">
+                                <h5 class="card-title">Root Canal Treatment</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-3 py-2">
+                        <div class="card" title="Wisdom Teeth Removal">
+                            <img src="images/wisdom-teeth-removal.jpg" class="card-img-top" loading="lazy"
+                                alt="Wisdom Teeth Removal">
+                            <div class="card-body">
+                                <h5 class="card-title">Wisdom Teeth Removal</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-3 py-2">
+                        <div class="card" title="Braces & Aligners">
+                            <img src="images/braces-aligners.jpg" class="card-img-top" loading="lazy"
+                                alt="Braces & Aligners">
+                            <div class="card-body">
+                                <h5 class="card-title">Braces & Aligners</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-3 py-2">
+                        <div class="card" title="Dental Implants">
+                            <img src="images/dental-implants.jpg" class="card-img-top" loading="lazy"
+                                alt="Dental Implants">
+                            <div class="card-body">
+                                <h5 class="card-title">Dental Implants</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- testimonial -->
+            <section class="testimonial text-center">
+                <div class="container">
+                    <div class="heading white-heading">
+                        Testimonial
+                    </div>
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active">
+                                <div class="testimonial4_slide">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/3177/3177440.png"
+                                        class="img-circle img-responsive" />
+                                    <p>I am wondered by the patience of the doctor who answered each and every concern
+                                        of
+                                        mine regarding the problem, procedure and cost. A patient needs to know if they
+                                        are
+                                        in good hands and Sai's Tooth Care definitely made me feel that. Thank you so
+                                        much
+                                        for the wonderful outcome of the treatment undergone.
+                                    </p>
+                                    <h4>Thendral Saravanan</h4>
+                                    <p class="stars">⭐⭐⭐⭐⭐</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="testimonial4_slide">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/3177/3177440.png"
+                                        class="img-circle img-responsive" />
+                                    <p>Visited sai Dental clinic for getting my teeth filled. Dr. Indhumathy did a
+                                        beautiful
+                                        composite filling and gave me tips on maintenance of teeth and importance of
+                                        regular
+                                        brushing and flossing. The standards of the clinic is in par with most other
+                                        advanced clinics. Doctor also gave me a tour around the clinic and it was very
+                                        impressive.
+                                    </p>
+                                    <h4>Saro Saranya</h4>
+                                    <p class="stars">⭐⭐⭐⭐⭐</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="testimonial4_slide">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/3177/3177440.png"
+                                        class="img-circle img-responsive" />
+                                    <p>Finding a dentist isn’t hard. Finding a good dentist is a little more of a
+                                        challenge.
+                                        Finding a dentist you absolutely trust and like going to is like winning the
+                                        gold
+                                        medal..Excellent family dental clinic providing friendly and professional
+                                        services
+                                        customized to every individual patient's needs.
+                                    </p>
+                                    <h4>Kiran babani</h4>
+                                    <p class="stars">⭐⭐⭐⭐⭐</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact -->
+            <section id="contact">
+                <h2>Contact Us</h2>
+                <h3>We Are Looking Forward To Hearing From You!</h3>
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 address">
+                        <a href="https://goo.gl/maps/KR3ChK2BuzgPSYSm9" target="_blank" title="Address" class="time">
+                            <Address><i class="fas fa-map-marked-alt c-icon"></i> <b> Address : </b>SAI'S Tooth Care,
+                                144/287, Avai Shanmugam Salai, Gopalapuram, Chennai, Tamil Nadu 600086.</Address>
+                        </a>
+                        <a href="https://goo.gl/maps/KR3ChK2BuzgPSYSm9" target="_blank" title="Landmark" class="time">
+                            <Address><i class="fas fa-map c-icon"></i><b> Landmark : </b>(Opposite to Eswari Lending
+                                Library, next to Lloyd's road bus stop, Ganapathy Colony.)</Address>
+                        </a>
+                        <a title="Call SAI's tooth care" class="time tel-mail" target="_blank"
+                            href="tel:+9198414 05334"><i class="fas fa-phone-alt  c-icon"></i><b>Phone : </b> +91 -
+                            98414 05334</a>
+                        <a title="Mail SAI's tooth care" class="time tel-mail" target="_blank"
+                            href="mailto:info@saistoothcare.com"><i class="fas fa-envelope  c-icon"></i></i>
+                            <b>Email : </b> info@saistoothcare.com</a>
+                        <div class="row">
+                            <div class="col">
+                                <a class="btn facebook s-icon" href="#" target="_blank" title="Facebook"
+                                    role="button"><i class="fab fa-facebook-f "></i></a>
+                            </div>
+                            <div class="col">
+                                <a class="btn instagram s-icon" href="#" target="_blank" title="Instagram"
+                                    role="button"><i class="fab fa-instagram"></i></a>
+                            </div>
+                            <div class="col">
+                                <a class="btn twitter s-icon" href="#" target="_blank" title="Twitter" role="button"><i
+                                        class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <iframe class="col-sm-12 col-md-6 justify-content-center"
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7773.590815864222!2d80.25988!3d13.048691!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xedb656ef9f4739bd!2sSAI&#39;S%20TOOTH%20CARE!5e0!3m2!1sen!2sin!4v1660898668279!5m2!1sen!2sin"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+
+            </section>
+            <hr>
+        </main>
+
+
         <!-- footer -->
-        <section id="footer">
-            <p>Copyright © 2022 SAI'S Tooth Care. All Rights Reserved</p>
-            <p class="font3">Powered By <a class="footlink" title="Kiruvin Creations" target="_blank"
-                    href="https://www.kiruvin.com/">Kiruvin
-                    Creations</a>.
-            </p>
-        </section>
+        <footer>
+            <section id="footer">
+                <p>Copyright © 2022 SAI'S Tooth Care. All Rights Reserved</p>
+                <p class="font3">Powered By <a class="footlink" title="Kiruvin Creations" target="_blank"
+                        href="https://www.kiruvin.com/">Kiruvin
+                        Creations</a>.
+                </p>
+            </section>
+        </footer>
     </div>
 
     <!-- JavaScript Bundle with Popper -->
