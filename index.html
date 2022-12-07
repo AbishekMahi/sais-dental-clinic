@@ -23,7 +23,55 @@
         <lottie-player src="images/40503-gladiator-tooth.json" background="transparent" speed="1" loop autoplay>
         </lottie-player>
     </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Book an Appointment</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Name:</label>
+                            <input type="text" name="Name" class="form-control" required placeholder="Enter Name"
+                                id="recipient-name">
+                        </div>
+                        <!-- <div class="mb-3">
+                            <label for="recipient-email" class="col-form-label">Email:</label>
+                            <input type="email" class="form-control" id="recipient-name">
+                        </div> -->
+                        <div class="mb-3">
+                            <label for="recipient-tel" class="col-form-label">Phone Number:</label>
+                            <input type="tel" name="Phone" class="form-control" required
+                                placeholder="Enter Phone Number" id="recipient-name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="datetime" class="col-form-label">Date & Time:</label>
+                            <input type="datetime-local" id="datetime-local" class="form-control" required
+                                placeholder="Date & Time">
+                        </div>
 
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="checkbox" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Default checkbox
+                            </label>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message-text" class="col-form-label">Message:</label>
+                            <textarea class="form-control" name="Message" required
+                                placeholder="Write your Message here..." id="message-text"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <div style="display:none;" id="main" class="animate-bottom main">
         <a href="http://wa.me/+918552085521" target="_blank" title="Whatsapp" class="whatsapp"><i
                 class="fab fa-whatsapp" aria-hidden="true"></i></a>
@@ -178,59 +226,7 @@
                             title="Book an Appointment" type="button">Book an Appointment</buttons>
                     </div>
 
-                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">Book an Appointment</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <form>
-                                        <div class="mb-3">
-                                            <label for="recipient-name" class="col-form-label">Name:</label>
-                                            <input type="text" name="Name" class="form-control" required
-                                                placeholder="Enter Name" id="recipient-name">
-                                        </div>
-                                        <!-- <div class="mb-3">
-                                        <label for="recipient-email" class="col-form-label">Email:</label>
-                                        <input type="email" class="form-control" id="recipient-name">
-                                    </div> -->
-                                        <div class="mb-3">
-                                            <label for="recipient-tel" class="col-form-label">Phone Number:</label>
-                                            <input type="tel" name="Phone" class="form-control" required
-                                                placeholder="Enter Phone Number" id="recipient-name">
-                                        </div>
-                                        <div class="mb-3">
-                                            <label for="datetime" class="col-form-label">Date & Time:</label>
-                                            <input type="datetime-local" id="datetime-local" class="form-control"
-                                                required placeholder="Date & Time">
-                                        </div>
 
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="checkbox"
-                                                id="flexCheckDefault">
-                                            <label class="form-check-label" for="flexCheckDefault">
-                                                Default checkbox
-                                            </label>
-                                        </div>
-                                        <div class="mb-3">
-                                            <label for="message-text" class="col-form-label">Message:</label>
-                                            <textarea class="form-control" name="Message" required
-                                                placeholder="Write your Message here..." id="message-text"></textarea>
-                                        </div>
-                                    </form>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary"
-                                        data-bs-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Submit</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </section>
             <!-- Services -->
