@@ -273,17 +273,17 @@ p {
     margin-bottom: 1rem !important;
 }
 
-.fa-clock,
-.fa-phone-alt {
+.c-icon,
+.bottomicon {
     color: #24c8ff !important;
     padding-right: 10px;
     font-size: 45px;
     font-weight: 700;
 }
 
-.fa-phone-alt {
+/* .fa-phone-alt {
     font-size: 40px !important;
-}
+} */
 
 .smile {
     width: 100px;
@@ -321,6 +321,17 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.icons {
+    color: #24c8ff !important;
+    font-size: 20px !important;
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+label {
+    font-weight: 600 !important;
 }
 
 .modal-dialog,
